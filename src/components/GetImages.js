@@ -19,7 +19,20 @@ export default function GetImages() {
 
     return (
         <>
-            <h1>{images.length}</h1>
+            {!images ? <h2>Loading...</h2> :
+                <section>
+                    <h1>Recommended for you</h1>
+
+                    <div>
+                        {images.map((image, index) => (
+                            <Image key={image.id} />
+                        ))}
+                    </div>
+                </section>
+
+
+
+            }
         </>
     )
 }
