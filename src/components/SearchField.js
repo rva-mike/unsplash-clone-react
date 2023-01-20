@@ -7,7 +7,9 @@ const SearchField = () => {
         type="search" 
         placeholder="search..."
         />
-        <button>Search</button>
+        <button
+        className="bg-blue-600 px-6 py-2.5 text-white rounded-tr rounded-br focus:ring-2 focus:ring-blue-300 disabled:bg-gray-400"
+        >Search</button>
     </div>
   )
 }
