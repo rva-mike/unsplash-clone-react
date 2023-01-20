@@ -1,6 +1,7 @@
 // import { BrowserRouter, Routes, Route } from "react-router-dom"
 import GetImages from "./components/GetImages"
 import Jumbotron from "./components/Jumbotron"
+import SearchField from "./components/SearchField"
 
 export default function App() {
   return (
@@ -11,7 +12,9 @@ export default function App() {
       {/* <Route path="/:username" element={<Profile />}></Route> */}
       {/* </Routes> */}
       {/* </BrowserRouter> */}
-      <Jumbotron />
+      <Jumbotron>
+        <SearchField/>
+      </Jumbotron>
       <GetImages />
     </>
   )
