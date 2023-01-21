@@ -4,6 +4,7 @@ import Jumbotron from "./components/Jumbotron"
 import SearchField from "./components/SearchField"
 import SearchImages from "./components/SearchImages"
 import useAxios from "./hooks/useAxios"
+import { createContext } from "react"
 
 // Create Context
 export const ImageContext = createContext();
