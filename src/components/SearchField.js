@@ -4,7 +4,7 @@ import { ImageContext } from "../App";
 const SearchField = () => {
 
     const [searchValue, setSearchValue] = useState("");
-    const { fetchData } = useContext(ImageContext)
+    const { fetchData, setSearchImage } = useContext(ImageContext)
 
     const handleInputChange = (e) => {
         setSearchValue(e.target.value)
@@ -12,13 +12,16 @@ const SearchField = () => {
 
     const handleButtonSearch = () => {
         fetchData(`search/photos?page=1&query=${searchValue}&client_id=${process.env.REACT_APP_UNSPLASH_API_KEY}`)
-        setSearchValue("")
+        setSearchValue("");
+        setSearchImage(searchValue);
     }
 
     const handleEnterSearch = (e) => {
         if(e.key === 'Enter') {
             fetchData(`search/photos?page=1&query=${searchValue}&client_id=${process.env.REACT_APP_UNSPLASH_API_KEY}`)
-            setSearchValue("")
+            setSearchValue("");
+            setSearchImage(searchValue);
+
         }
     }
 

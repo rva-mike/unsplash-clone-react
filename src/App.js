@@ -4,21 +4,25 @@ import Jumbotron from "./components/Jumbotron"
 import SearchField from "./components/SearchField"
 import SearchImages from "./components/SearchImages"
 import useAxios from "./hooks/useAxios"
-import { createContext } from "react"
+import { createContext, useState } from "react"
 
 // Create Context
 export const ImageContext = createContext();
 
 export default function App() {
 
-  const { response, isLoading, error, fetchData } = useAxios(`search/photos?page=1&query=cats&client_id=${process.env.REACT_APP_UNSPLASH_API_KEY}`)
-  console.log(response)
+  const [searchImage, setSearchImage] = useState('')
+
+  const { response, isLoading, error, fetchData } = useAxios(`search/photos?page=1&query=creative&client_id=${process.env.REACT_APP_UNSPLASH_API_KEY}`)
+  // console.log(response)
 
   const value = {
     response,
     isLoading,
     error,
-    fetchData
+    fetchData,
+    searchImage,
+    setSearchImage
   }
 
   return (
