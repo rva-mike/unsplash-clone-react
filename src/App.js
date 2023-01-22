@@ -11,7 +11,7 @@ export const ImageContext = createContext();
 
 export default function App() {
 
-  const { response, isLoading, error, fetchData } = useAxios(`search/photos?page=1&query=office&client_id=${process.env.REACT_APP_UNSPLASH_API_KEY}`)
+  const { response, isLoading, error, fetchData } = useAxios(`search/photos?page=1&query=cats&client_id=${process.env.REACT_APP_UNSPLASH_API_KEY}`)
   console.log(response)
 
   const value = {
