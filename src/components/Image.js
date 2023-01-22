@@ -4,7 +4,10 @@ export default function Image(props) {
     return (
         <>
             <article className="shadow-md bg-white rounded-3xl p-5">
-                <img src={props.urls.small} alt={props.user.name} loading="lazy" className="h-52 w-full object-cover rounded-3xl md:h-80" />
+                <a href={props.urls.small} target="_blank" rel="noreferrer">
+                    <img src={props.urls.small} alt={props.user.name} loading="lazy" className="h-52 w-full object-cover rounded-3xl md:h-80" />
+                </a>
+
 
                 <article className="flex flex-wrap items-center justify-between">
                     <div className="pt-5 flex items-center justify-start">
