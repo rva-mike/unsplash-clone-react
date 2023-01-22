@@ -15,6 +15,13 @@ const SearchField = () => {
         setSearchValue("")
     }
 
+    const handleEnterSearch = (e) => {
+        if(e.key === 'Enter') {
+            fetchData(`search/photos?page=1&query=${searchValue}&client_id=${process.env.REACT_APP_UNSPLASH_API_KEY}`)
+            setSearchValue("")
+        }
+    }
+
   return (
     <div className="flex">
         <input 
@@ -23,6 +30,7 @@ const SearchField = () => {
         placeholder="search..."
         value={searchValue}
         onChange={handleInputChange}
+        onKeyDown={handleEnterSearch}
         />
         <button
         onClick={handleButtonSearch}
