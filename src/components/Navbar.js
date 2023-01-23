@@ -6,8 +6,8 @@ const Navbar = () => {
 
 
 
-            <div
-                className="navbar drop-shadow-lg bg-base-100 fixed">
+            <nav
+                className="navbar flex drop-shadow-lg bg-base-100 fixed">
                 <div className="flex-1">
                     <a href='/' className="text-white btn btn-ghost normal-case text-2xl">nusplash<img src={require('../images/nuLogo.png')} class="h-9" alt="" /></a>
                 </div>
@@ -18,7 +18,7 @@ const Navbar = () => {
                         <li><a>Explore</a></li>
                     </ul>
                 </div>
-            </div>
+            </nav>
 
         </>
     )
