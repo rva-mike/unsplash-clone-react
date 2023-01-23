@@ -5,6 +5,8 @@ import SearchField from "./components/SearchField"
 import SearchImages from "./components/SearchImages"
 import useAxios from "./hooks/useAxios"
 import { createContext, useState } from "react"
+import Navbar from "./components/Navbar"
+import Footer from "./components/Footer"
 
 // Create Context
 export const ImageContext = createContext();
@@ -34,14 +36,14 @@ export default function App() {
       {/* </Routes> */}
       {/* </BrowserRouter> */}
       <ImageContext.Provider value={value}>
+        <Navbar />
         <Jumbotron>
           <SearchField />
         </Jumbotron>
         <SearchImages />
       </ImageContext.Provider>
-
-
       <GetImages />
+      <Footer />
     </>
   )
 }

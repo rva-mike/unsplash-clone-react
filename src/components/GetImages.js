@@ -21,10 +21,10 @@ export default function GetImages() {
     return (
         <>
             {!images ? <h2 className="flex items-center justify-center h-screen font-bold text-4xl text-center text-slate-800">Loading...</h2> :
-                <section className="px-5 container mx-auto">
-                    <h1 className="font-bold text-4xl md:text-4xl lg:text-6xl my-10 lg:mt-20 lg:mb-16 text-slate-800">Recommended for you</h1>
+                <section id="recommended" className="px-5 container mx-auto">
+                    <h1 id="recommended" className="font-bold text-4xl md:text-4xl lg:text-6xl my-10 lg:mt-20 lg:mb-16 text-slate-800">Recommended for you</h1>
 
-                    <div className="grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-2 mb-10">
+                    <div className="grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 mb-10">
                         {images.map((image) => (
                             <Image key={image.id} {...image} />
                         ))}
