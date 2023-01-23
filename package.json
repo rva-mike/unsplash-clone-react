@@ -1,6 +1,7 @@
 {
   "name": "unsplash-image-gallery",
   "version": "0.1.0",
+  "homepage": "https://rva-mike.github.io/unsplash-clone-react/",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",
@@ -17,6 +18,8 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -b develop -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -42,6 +45,7 @@
   },
   "devDependencies": {
     "autoprefixer": "^10.4.7",
+    "gh-pages": "^5.0.0",
     "postcss": "^8.4.13",
     "tailwindcss": "^3.0.24"
   }
