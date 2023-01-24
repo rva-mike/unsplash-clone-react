@@ -28,11 +28,11 @@ body {
 input {
   border-top-right-radius: 0px !important;
   border-bottom-right-radius: 0px !important;
-  border-bottom-left-radius: 10px !important;
-  border-top-left-radius: 10px !important;
+  border-bottom-left-radius: 5px !important;
+  border-top-left-radius: 5px !important;
 }
 
 .search-btn {
-  border-top-right-radius: 10px;
-  border-bottom-right-radius: 10px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
 }
