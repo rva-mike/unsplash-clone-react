@@ -9,7 +9,7 @@ const Navbar = () => {
             <nav
                 className="navbar w-100 h-1 drop-shadow-lg bg-base-100 fixed text-white">
                 <div className="flex-1">
-                    <a href='/' className="text-white btn btn-ghost normal-case text-2xl">nusplash<img src={require('../images/nuLogo.png')} class="h-9" alt="" /></a>
+                    <a href='https://rva-mike.github.io/unsplash-clone-react/' className="text-white btn btn-ghost normal-case text-2xl">nusplash<img src={require('../images/nuLogo.png')} class="h-9" alt="" /></a>
                 </div>
                     <ul className="menu menu-horizontal px-1 invisible md:visible ">
                         <li><a href='/'>Search</a></li>
