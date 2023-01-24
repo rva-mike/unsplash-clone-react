@@ -40,7 +40,7 @@ const SearchField = () => {
         onClick={handleButtonSearch}
         disabled={!searchValue}
         // bg-blue-600
-        className="bg-primary px-6 py-2.5 text-white rounded-tr rounded-br focus:ring-2 focus:ring-purple-300 disabled:bg-violet-600 hover:bg-violet-600"
+        className="bg-primary px-6 py-2.5 text-white rounded-tr rounded-br focus:ring-2 focus:ring-purple-300 disabled:bg-violet-600 hover:bg-violet-600 search-btn"
         >Search</button>
     </div>
   )
