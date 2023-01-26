@@ -25,14 +25,12 @@ body {
   margin-right: 200px;
 }
 
+
 input {
-  border-top-right-radius: 0px !important;
-  border-bottom-right-radius: 0px !important;
-  border-bottom-left-radius: 5px !important;
-  border-top-left-radius: 5px !important;
+  border-radius: 0;
 }
 
-.search-btn {
-  border-top-right-radius: 5px;
-  border-bottom-right-radius: 5px;
+input[type="search"] {
+  -webkit-appearance: none;
 }
+

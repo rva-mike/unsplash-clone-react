@@ -15,7 +15,7 @@ export default function App() {
 
   const [searchImage, setSearchImage] = useState('')
 
-  const { response, isLoading, error, fetchData } = useAxios(`search/photos?page=1&query=creative&client_id=${process.env.REACT_APP_UNSPLASH_API_KEY}`)
+  const { response, isLoading, error, fetchData } = useAxios(`search/photos?page=1&query=space&client_id=${process.env.REACT_APP_UNSPLASH_API_KEY}`)
   // console.log(response)
 
   const value = {

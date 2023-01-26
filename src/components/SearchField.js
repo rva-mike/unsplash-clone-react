@@ -26,10 +26,12 @@ const SearchField = () => {
     }
 
   return (
-    <div   className="flex mr-3 ml-3 md:w-100">
+    <div   className="flex mr-6 ml-6 md:w-100">
         <input 
         className="bg-gray-50 border border-gray-300 text-small w-full
-         indent-2 p-2.5 outline-none focus:border-purple-500 focus:ring-2 rounded-tl rounded-bl"
+         indent-2 p-2.5 outline-none focus:border-purple-500 focus:ring-2 
+         rounded-tl rounded-bl text-black
+         "
         type="search" 
         placeholder="search..."
         value={searchValue}
@@ -40,7 +42,11 @@ const SearchField = () => {
         onClick={handleButtonSearch}
         disabled={!searchValue}
         // bg-blue-600
-        className="bg-primary px-6 py-2.5 text-white rounded-tr rounded-br focus:ring-2 focus:ring-purple-300 disabled:bg-violet-600 hover:bg-violet-600 search-btn"
+        className="bg-primary px-6 py-2.5 text-white focus:ring-2 focus:ring-purple-300 disabled:bg-violet-600 hover:bg-violet-600 search-btn 
+        rounded-tr rounded-br
+
+
+        "
         >Search</button>
     </div>
   )

@@ -4,15 +4,13 @@ const Navbar = () => {
         <>
 
 
-
-
             <nav
                 className="navbar w-100 h-1 drop-shadow-lg bg-base-100 fixed text-white">
                 <div className="flex-1">
-                    <a href='https://rva-mike.github.io/unsplash-clone-react/' className="text-white btn btn-ghost normal-case text-2xl">nusplash<img src={require('../images/nuLogo.png')} class="h-9" alt="" /></a>
+                    <a href='https://rva-mike.github.io/unsplash-clone-react/' className="text-white btn btn-ghost normal-case text-2xl font-bold">nusplash<img src={require('../images/nuLogo.png')} class="h-9" alt="" /></a>
                 </div>
                     <ul className="menu menu-horizontal px-1 invisible md:visible ">
-                        <li><a href='/'>Search</a></li>
+                        <li><a href='#search'>Search</a></li>
                         <li><a href='#recommended'>Recommended</a></li>
                         <li><a>Explore</a></li>
                     </ul>
@@ -22,9 +20,9 @@ const Navbar = () => {
 
                         </label>
                         <ul tabIndex={0} className="dropdown-content menu p-2  shadow bg-slate-500 rounded-box w-30 ">
-                            <li><a href='/'>Search</a></li>
+                            <li><a href='#search'>Search</a></li>
                             <li><a href='#recommended'>Recommended</a></li>
-                            <li><a>Explore</a></li>
+                            <li><a href='#recommended'>Explore</a></li>
                         </ul>
                     </div>
             </nav>

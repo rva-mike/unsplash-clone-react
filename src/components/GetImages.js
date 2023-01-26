@@ -23,7 +23,7 @@ export default function GetImages() {
         <div className="pt-8" id="recommended"></div>
             {!images ? <h2 className="flex items-center justify-center h-screen font-bold text-4xl text-center text-slate-800">Loading...</h2> :
                 <section className="px-5 container mx-auto">
-                    <h1  className="font-bold text-3xl md:text-4xl lg:text-5xl my-10  lg:mb-16 text-slate-800">Recommended for you</h1>
+                    <h1  className="font-bold text-4xl md:text-4xl lg:text-5xl my-10  lg:mb-16 text-slate-800">Recommended for you</h1>
 
                     <div className="grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 mb-10">
                         {images.map((image) => (
