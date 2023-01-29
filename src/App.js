@@ -7,6 +7,8 @@ import useAxios from "./hooks/useAxios"
 import { createContext, useState } from "react"
 import Navbar from "./components/Navbar"
 import Footer from "./components/Footer"
+import { ExploreImage } from "./components/ExploreImage"
+import { Loader } from "./components/Loader"
 
 // Create Context
 export const ImageContext = createContext();
@@ -43,6 +45,8 @@ export default function App() {
         <SearchImages />
       </ImageContext.Provider>
       <GetImages />
+      <Loader />
+      <ExploreImage />
       <Footer />
     </>
   )
