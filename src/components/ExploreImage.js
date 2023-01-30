@@ -9,6 +9,6 @@ const Img = styled.img`
 
 export const ExploreImage = ({ url, key }) => {
     
-  return  <Img src={url} key={key} alt="" />
+  return  <Img className='' src={url} key={key} alt="" />
   
 }

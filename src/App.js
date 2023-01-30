@@ -2,6 +2,9 @@
 import useAxios from "./hooks/useAxios"
 import { createContext, useState, useEffect, } from "react"
 import axios from "axios"
+import styled from 'styled-components'
+import { createGlobalStyle } from 'styled-components'
+
 
 //Components
 import GetImages from "./components/GetImages"
@@ -12,6 +15,24 @@ import Navbar from "./components/Navbar"
 import Footer from "./components/Footer"
 import { ExploreImage } from "./components/ExploreImage"
 import { Loader } from "./components/Loader"
+
+//style
+const GlobalStyle = createGlobalStyle`
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+`;
+
+const WrapperImage = styled.section`
+max-width: 70rem;
+margin: 4rem auto;
+display: grid;
+grid-gap: 1em;
+grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+grid-auto-rows: 300px;
+`
 
 // Create Context
 export const ImageContext = createContext();
@@ -25,9 +46,11 @@ export default function App() {
     const accessKey = process.env.REACT_APP_UNSPLASH_API_KEY_2;
 
     axios
-      .get(`${apiRoot}/photos/random?client_id=${accessKey}&count=10`)
+      .get(`${apiRoot}/photos/random?client_id=${accessKey}&count=30`)
       .then(res => setExploreImages([...exploreImages, ...res.data]))
   }, [])
+
+
 
 
 
@@ -61,10 +84,13 @@ export default function App() {
         <SearchImages />
       </ImageContext.Provider>
       <GetImages />
+      <GlobalStyle />
       <Loader />
-      {exploreImages.map(imageForExplore => (
-        <ExploreImage url={imageForExplore.urls.thumb} key={imageForExplore.id} />
+      <WrapperImage>
+        {exploreImages.map(imageForExplore => (
+          <ExploreImage url={imageForExplore.urls.small} key={imageForExplore.id} />
         ))}
+      </WrapperImage>
       <Footer />
     </>
   )
