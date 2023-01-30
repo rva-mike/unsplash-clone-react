@@ -1,7 +1,6 @@
 // import { BrowserRouter, Routes, Route } from "react-router-dom"
-
 import useAxios from "./hooks/useAxios"
-import { createContext, useState, useEffect } from "react"
+import { createContext, useState, useEffect, } from "react"
 import axios from "axios"
 
 //Components
@@ -26,7 +25,7 @@ export default function App() {
     const accessKey = process.env.REACT_APP_UNSPLASH_API_KEY_2;
 
     axios
-      .get(`${apiRoot}/photos/random?client_id=${accessKey}&count=1`)
+      .get(`${apiRoot}/photos/random?client_id=${accessKey}&count=10`)
       .then(res => setExploreImages([...exploreImages, ...res.data]))
   }, [])
 
