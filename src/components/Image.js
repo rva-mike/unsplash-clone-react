@@ -5,7 +5,7 @@ export default function Image(props) {
         <>
             <article className="shadow-md bg-white rounded-3xl p-5">
                 <a href={props.urls.small} target="_blank" rel="noreferrer">
-                    <img src={props.urls.small} alt={props.user.name} loading="lazy" className="h-52 w-full object-cover rounded-3xl md:h-80" />
+                    <img src={props.urls.small} alt={props.user.name} loading="lazy" className="h-80 w-full object-cover rounded-3xl md:h-80" />
                 </a>
 
 
