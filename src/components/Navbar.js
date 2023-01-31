@@ -12,7 +12,7 @@ const Navbar = () => {
                     <ul className="menu menu-horizontal px-1 invisible md:visible ">
                         <li><a href='#search'>Search</a></li>
                         <li><a href='#recommended'>Recommended</a></li>
-                        <li><a>Explore</a></li>
+                        <li><a href='#explore'>Explore</a></li>
                     </ul>
                     <div className="dropdown dropdown-end">
                         <label tabIndex={0} className="btn btn-ghost btn-circle visible md:hidden ">
@@ -22,7 +22,7 @@ const Navbar = () => {
                         <ul tabIndex={0} className="dropdown-content menu p-2  shadow bg-slate-500 rounded-box w-30 ">
                             <li><a href='#search'>Search</a></li>
                             <li><a href='#recommended'>Recommended</a></li>
-                            <li><a href='#recommended'>Explore</a></li>
+                            <li><a href='#explore'>Explore</a></li>
                         </ul>
                     </div>
             </nav>

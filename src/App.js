@@ -86,6 +86,7 @@ export default function App() {
       <GetImages />
       <GlobalStyle />
       <Loader />
+      <h1 id="explore" className="ml-6 mt-4 font-bold text-4xl md:text-4xl lg:text-5xl my-10  lg:mb-16 text-slate-800">Explore</h1>
       <WrapperImage>
         {exploreImages.map(imageForExplore => (
           <ExploreImage url={imageForExplore.urls.small} key={imageForExplore.id} />
