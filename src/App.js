@@ -16,6 +16,7 @@ import Navbar from "./components/Navbar"
 import Footer from "./components/Footer"
 import { ExploreImage } from "./components/ExploreImage"
 import { Loader } from "./components/Loader"
+import { ExploreTitle } from "./components/ExploreTitle"
 
 //style
 const GlobalStyle = createGlobalStyle`
@@ -91,6 +92,7 @@ export default function App() {
       </ImageContext.Provider>
       <GetImages />
       <GlobalStyle />
+      <ExploreTitle />
       <InfiniteScroll
         dataLength={exploreImages.length}
         next={fetchImages}
@@ -103,9 +105,7 @@ export default function App() {
           ))}
         </WrapperImage>
       </InfiniteScroll>
-      <Loader />
-      <h1 id="explore" className="ml-6 mt-4 font-bold text-4xl md:text-4xl lg:text-5xl my-10  lg:mb-16 text-slate-800">Explore</h1>
-
+    
       <Footer />
     </>
   )

@@ -5,7 +5,7 @@ export default function footer() {
         <>
             <section className="footer footer-center p-4 bg-base-100 text-base-content">
                 <div>
-                    <p>Copyright © 2023  //  nusplash </p>
+                    <p>nusplash 2023 </p>
                 </div>
             </section>
         </>

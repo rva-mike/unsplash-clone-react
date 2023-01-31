@@ -6,6 +6,10 @@ img {
   max-width: 100%;
 }
 
+html {
+  scroll-padding-top: 4rem !important;
+}
+
 body {
   margin: 0;
   /* font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
@@ -21,9 +25,10 @@ body {
   @apply bg-slate-100;
 }
 
-.thing {
-  margin-right: 200px;
+.recommended {
+  margin-bottom: px !important;
 }
+
 
 
 input {
