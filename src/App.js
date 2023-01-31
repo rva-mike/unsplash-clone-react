@@ -4,6 +4,7 @@ import { createContext, useState, useEffect, } from "react"
 import axios from "axios"
 import styled from 'styled-components'
 import { createGlobalStyle } from 'styled-components'
+import InfiniteScroll from "react-infinite-scroll-component"
 
 
 //Components
@@ -42,16 +43,21 @@ export default function App() {
   const [exploreImages, setExploreImages] = useState([]);
 
   useEffect(() => {
+    fetchImages();
+  }, [])
+
+
+  const fetchImages = () => {
+
     const apiRoot = "https://api.unsplash.com";
     const accessKey = process.env.REACT_APP_UNSPLASH_API_KEY_2;
 
     axios
       .get(`${apiRoot}/photos/random?client_id=${accessKey}&count=30`)
       .then(res => setExploreImages([...exploreImages, ...res.data]))
-  }, [])
 
 
-
+  }
 
 
   const [searchImage, setSearchImage] = useState('')
@@ -85,13 +91,21 @@ export default function App() {
       </ImageContext.Provider>
       <GetImages />
       <GlobalStyle />
+      <InfiniteScroll
+        dataLength={exploreImages.length}
+        next={fetchImages}
+        hasMore={true}
+        loader={<Loader />}
+      >
+        <WrapperImage>
+          {exploreImages.map(imageForExplore => (
+            <ExploreImage url={imageForExplore.urls.small} key={imageForExplore.id} />
+          ))}
+        </WrapperImage>
+      </InfiniteScroll>
       <Loader />
       <h1 id="explore" className="ml-6 mt-4 font-bold text-4xl md:text-4xl lg:text-5xl my-10  lg:mb-16 text-slate-800">Explore</h1>
-      <WrapperImage>
-        {exploreImages.map(imageForExplore => (
-          <ExploreImage url={imageForExplore.urls.small} key={imageForExplore.id} />
-        ))}
-      </WrapperImage>
+
       <Footer />
     </>
   )
