@@ -25,11 +25,6 @@ body {
   @apply bg-slate-100;
 }
 
-.recommended {
-  margin-bottom: px !important;
-}
-
-
 
 input {
   border-radius: 0;
