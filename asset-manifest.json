@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/unsplash-clone-react/static/css/main.37f3f5b1.css",
-    "main.js": "/unsplash-clone-react/static/js/main.76a9e6d3.js",
+    "main.js": "/unsplash-clone-react/static/js/main.243d7e84.js",
     "index.html": "/unsplash-clone-react/index.html",
     "main.37f3f5b1.css.map": "/unsplash-clone-react/static/css/main.37f3f5b1.css.map",
-    "main.76a9e6d3.js.map": "/unsplash-clone-react/static/js/main.76a9e6d3.js.map"
+    "main.243d7e84.js.map": "/unsplash-clone-react/static/js/main.243d7e84.js.map"
   },
   "entrypoints": [
     "static/css/main.37f3f5b1.css",
-    "static/js/main.76a9e6d3.js"
+    "static/js/main.243d7e84.js"
   ]
 }
