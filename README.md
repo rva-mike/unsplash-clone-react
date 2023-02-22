@@ -1,8 +1,4 @@
 # nusplash
-A reimagined https://unsplash.com/
-
-### Note: Under development
-I am currently still adding features and tweaking the desings, but please have a look! 
 
   ## Description
 This is an application I created using the available Unsplash API (https://unsplash.com/developers). It is my take/redesign of the popular image searching website. It is built using React.js and primarily styled with Tailwind.css.
@@ -10,6 +6,8 @@ This is an application I created using the available Unsplash API (https://unspl
 https://reactjs.org/
 
 https://tailwindcss.com/
+
+https://unsplash.com/
 
   ## Table of Contents
   * [Description](#description)
