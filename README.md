@@ -34,8 +34,15 @@ https://www.npmjs.com/package/axios
   
   ### Desktop
   
+  #### Search section
 ![rva-mike github io_unsplash-clone-react_ copy_1](https://user-images.githubusercontent.com/105617274/214625454-7f6b30e3-234c-4a06-aa4e-f8609e67fa6e.png)
+
+#### Recommended section
 ![rva-mike github io_unsplash-clone-react_ copy_2](https://user-images.githubusercontent.com/105617274/214625524-9b12a138-ca62-44d0-9669-d4bf7ceaaf19.png)
+
+#### Explore Section
+![Screenshot 2023-02-21 at 10 00 26 PM](https://user-images.githubusercontent.com/105617274/224584414-65e4651c-d2cf-462e-a1a3-4178b8326b5b.png)
+
 
 
 ### Mobile
