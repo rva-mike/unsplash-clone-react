@@ -1,13 +1,17 @@
 # nusplash
 
   ## Description
-This is an application I created using the available Unsplash API (https://unsplash.com/developers). It is my take/redesign of the popular image searching website. It is built using React.js and primarily styled with Tailwind.css.
+This is a personal project built using the unsplash.com API, React.js, and Tailwind CSS. I also used a couple of npm packages including axios for http requests, react-infinite-scroll-component, and animate.css. I wanted to create an application that utilizes the available unsplash.com APIs to allow users to search for images, get recommendations, and browse through random images all while have having an easy to use, modern design. 
+
+https://unsplash.com/
 
 https://reactjs.org/
 
 https://tailwindcss.com/
 
-https://unsplash.com/
+https://www.npmjs.com/package/react-infinite-scroll-component
+
+https://www.npmjs.com/package/axios
 
   ## Table of Contents
   * [Description](#description)
